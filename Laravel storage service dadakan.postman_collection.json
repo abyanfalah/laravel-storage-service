@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "a3718e12-d61d-4b38-87e1-905979d648b1",
+		"name": "Laravel storage service dadakan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "20199384"
+	},
+	"item": [
+		{
+			"name": "/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8000"
+			},
+			"response": []
+		},
+		{
+			"name": "get file by path",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8000"
+			},
+			"response": []
+		},
+		{
+			"name": "save file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama_file",
+							"value": "foto_profil_ujang",
+							"type": "text"
+						},
+						{
+							"key": "nama_folder",
+							"value": "gambar",
+							"type": "text"
+						},
+						{
+							"key": "file_yang_dikirim",
+							"type": "file",
+							"src": "/home/abyanf/Downloads/lmao pisan kang.jpg"
+						}
+					]
+				},
+				"url": "localhost:8000/image"
+			},
+			"response": []
+		}
+	]
+}
